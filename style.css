@@ -1,11 +1,14 @@
 .section{
   min-height: 100vh;
-  display: flex;
 }
 
 .section-pad{
   padding-left: 5vw;
   padding-right: 5vw;
+}
+
+div{
+  display:block;
 }
 
 .marquee{
