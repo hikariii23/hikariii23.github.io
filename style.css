@@ -23,7 +23,7 @@ div{
   white-space: nowrap;
   display: block;
   mix-blend-mode: difference;
-  animation: moveLeft 200s infinite;
+  animation: moveLeft 500s infinite;
 }
 
 
