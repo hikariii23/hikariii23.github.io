@@ -19,9 +19,7 @@
 .marquee span{
   white-space: nowrap;
   display: block;
-/*   hide the overflow part */
-/*   overflow: hidden;
-  mix-blend-mode: difference; */
+  mix-blend-mode: difference;
   animation: moveLeft 200s infinite;
 }
 
