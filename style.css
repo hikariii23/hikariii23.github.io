@@ -1,6 +1,16 @@
+.intro{
+  background-image: url(background.png);
+  color:272833;
+}
+
+.bg-cover{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .section{
   min-height: 100vh;
-  background-color:#272833;
 }
 
 .section-pad{
