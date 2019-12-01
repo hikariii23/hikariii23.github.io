@@ -1,26 +1,70 @@
-.intro{
-  background-image: url(background.png);
-  background-color:#272833;
+
+.marquee img {
+  width:1408px;
+  height:176px;
+}
+
+.marquee{
+  width:100%;
+  overflow:hidden;
+}
+
+
+body{
+  background-color:#1A2030;
 }
 
 .bg-cover{
-  background-size: cover;
-  background-position: center;
+  background-image: url(background.png);
+  background-size: auto 100%;
+  background-position: 60% 75%;
   background-repeat: no-repeat;
 }
 
-.portrait{
-  display: block;
+.portrait img{
+  display:block;
+  width:30%;
   text-align: center;
-  margin-top: 300px;
-  max-width: 100px;
+  margin-top: 1vh;
   margin-left: auto;
   margin-right: auto;
 }
 
 
-.section{
+.intro{
+  font-family: 'Montserrat', sans-serif;
+  font-size:50px;
+  color:#fff;
+  text-align:center;
+  line-height:20px;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  50%{
+    transform: translate(0);
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.appear{
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  /* make sure the end state stay*/
+  animation-fill-mode: forwards;
+}
+
+
+/* .section{
   min-height: 100vh;
+  display: flex;
 }
 
 .section-pad{
@@ -30,30 +74,4 @@
 
 div{
   display:block;
-}
-
-.marquee{
-  position: absolute;
-  top: 3vh;
-  left: 0;
-  width: 100%;
-  font-size: 5vw;
-  line-height:1;
-}
-.marquee span{
-  white-space: nowrap;
-  display: block;
-  mix-blend-mode: difference;
-  animation: moveLeft 100s infinite;
-}
-
-
-@keyframes moveLeft{
-  0%{
-    transform：translateX(0);
-  }
-  
-  100%{
-    transform: translateX(-3000vh);
-  }
-}
+} */
